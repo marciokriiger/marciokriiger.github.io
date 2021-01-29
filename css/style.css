@@ -1,0 +1,60 @@
+p {
+    font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.foto-perfil {
+    height: 100%;
+    max-width: auto;
+    border-radius: 50%;
+}
+
+.icones {
+    padding-left: 5px;
+}
+
+.titulosBrancos {    
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+}
+
+.titulosAzuis {    
+    padding-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #00a2ed
+}
+
+.paragrafoBrancos {
+    color: white !important;
+}
+
+.textoBranco {
+    color: white !important;
+}
+
+
+.jumbotron {
+    margin-bottom: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: black !important;
+}
+
+.corPrimaria {
+    background-color: #00a2ed;
+}
+
+.itemMenu {
+    color: white;
+}
+
+a:link {
+    text-decoration: none;
+}

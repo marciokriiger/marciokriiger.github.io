@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Portfolio Marcio</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <!-- Fonts awesome import -->
+    <script src="https://kit.fontawesome.com/4c82a35fd2.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light" style="background-color:#2c3e50">
+        <a class="textoBranco navbar-brand" href="#">Portfolio Marcio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
+            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+            <ul class="navbar-nav">
+                <li>
+                    <a href="#projetos" class="textoBranco nav-link">Projetos</a>
+                </li>
+                <li>
+                    <a href="#sobre-mim" class="textoBranco nav-link">Sobre mim</a>
+                </li>            
+                <li>
+                    <a href="#contato" class="textoBranco nav-link">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="jumbotron text-center corPrimaria">
+        <div class="container">
+            <img src="images/perfil.jpg" class="foto-perfil" alt="Responsive image">
+            <h1 class="textoBranco jumbotron-heading">Marcio Kriiger</h1>
+            <p class="textoBranco lead">Estagiário de Desenvolvimento
+            </p>
+            <p>
+                <a href="#contato" class="btn btn-dark my-2">Contato</a>
+            </p>
+            <a href="https://www.linkedin.com/in/marciokriiger" target="_blank" rel="noopener noreferrer"><i
+                    class="textoBranco fab fa-linkedin fa-lg"></i></a>
+            <a href="https://github.com/marciokriiger" target="_blank" rel="noopener noreferrer"><i
+                    class="textoBranco icones fab fa-github fa-lg"></i></a>
+            <a href="mailto:marciovonkriiger@gmail.com" target="_blank" rel="noopener noreferrer"><i
+                    class="textoBranco icones fas fa-envelope fa-lg"></i></a>
+        </div>
+    </section>
+    <!-- Projects -->
+    <div class="album py-5 bg-light " id="projetos">
+        <div class="container">
+            <h2 class="text-center jumbotron-heading titulosAzuis">Projetos</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" src="/images/moviebase.PNG" data-holder-rendered="true"
+                            style="height: 225px; width: 100%;max-width: 100%; display: block;">
+                        <div class="card-body">
+                            <p class="card-text">Projeto web que permite operações de CRUD em uma lista de objetos.
+                            </p>
+                            <ul>
+                                <li>Java EE</li>
+                                <li>JSF</li>
+                                <li>MVC</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="https://github.com/marciokriiger/jsf-crud-movie" target="_blank"
+                                        rel="noopener noreferrer"><button type="button"
+                                            class="btn btn-sm btn-outline-primary">Ver Código</button></a>
+                                </div>
+                                <small class="text-muted">JSF CRUD Movie</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card mb-4 box-shadow">
+                        <img class="card-img-top"
+                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
+                            alt="Thumbnail [100%x225]" src="/images/dsdeliver.PNG" data-holder-rendered="true"
+                            style="height: 225px; width: 100%; display: block;">
+                        <div class="card-body">
+                            <p class="card-text">Projeto web que simula uma aplicação de entregas de alimentos.
+                            </p>
+                            <ul>
+                                <li>Back end: Java, Spring Boot, JPA / Hibernate, Maven</li>
+                                <li>Front end: HTML / CSS / JS / TypeScript, ReactJS, React Native, Apex Charts, Expo
+                                </li>
+                                <li>Implantação em produção: Heroku, Netlify, Postgresql</li>
+                            </ul>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="btn-group">
+                                    <a href="https://marcio-kriiger-sds2.netlify.app" target="_blank"
+                                        rel="noopener noreferrer"><button type="button"
+                                            class="btn btn-sm btn-outline-success">Ver Projeto</button></a>
+                                    <a href="https://github.com/marciokriiger/dsdeliver-sds2" target="_blank"
+                                        rel="noopener noreferrer"><button type="button"
+                                            class="btn btn-sm btn-outline-primary">Ver Código</button></a>
+                                </div>
+                                <small class="text-muted">DS Deliver</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="jumbotron text-center corPrimaria" id="sobre-mim">
+        <div class="container">
+            <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
+            <p class="lead paragrafoBrancos">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec in odio
+                vitae lacus venenatis interdum. Aliquam tristique molestie molestie. Ut quis malesuada nulla. Ut dapibus
+                vehicula odio. Integer suscipit ut lacus ac pulvinar. Duis malesuada enim efficitur, rhoncus orci in,
+                hendrerit diam. Praesent neque quam, tincidunt varius risus consequat, semper pellentesque urna. Cras
+                auctor eget metus a ultricies. Integer varius aliquam nulla, sit amet rutrum nisl suscipit non. Donec
+                vel justo at ipsum auctor euismod.
+            </p>
+        </div>
+    </section>
+
+    <section Id="contato" class="titulosAzuis">
+        <div class="titulosAzuis">
+            <div class="container-fluid">
+                <h3 style="padding-top:90px;" class="text-center titulosAzuis">Disponível para oportunidades!</h3>
+                <h4 style="padding-bottom:90px;margin-bottom: 0px;color:white;" class="text-center"><a
+                        href="mailto:marciovonkriiger@gmail.com">marciovonkriiger@gmail.com</a></h4>
+            </div>
+        </div>
+    </section>
+
+    <footer class="text-center" style="background-color:#2c3e50;padding:0px; margin:0px">
+        <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">Copyright 2021 | Marcio
+            Kriiger
+        </p>
+    </footer>
+
+</body>
+
+</html>
