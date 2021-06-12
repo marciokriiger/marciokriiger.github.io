@@ -1,239 +1,327 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <title>Portfolio Marcio</title>
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
-    <!-- Fonts awesome import -->
-    <script src="https://kit.fontawesome.com/4c82a35fd2.js" crossorigin="anonymous"></script>
-    <!-- CSS -->
-    <link rel="stylesheet" href="/css/style.css">
-</head>
-
-<body>
-    <nav class="navbar navbar-expand-md navbar-light fixed-top" style="background-color:#2c3e50">
-        <a class="textoBranco navbar-brand" href="#">Portfolio Marcio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04"
-            aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">   
-                <i class="fas fa-bars" style="color:#fff; font-size:28px;"></i>
-            </span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarsExample04">
-            <ul class="navbar-nav mr-auto">
-
-            </ul>
-            <ul class="navbar-nav">
-                <li>
-                    <a href="#projetos" class="textoBranco nav-link">Projetos</a>
-                </li>
-                <li>
-                    <a href="#sobre-mim" class="textoBranco nav-link">Sobre mim</a>
-                </li>            
-                <li>
-                    <a href="#contato" class="textoBranco nav-link">Contato</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <section class="jumbotron text-center corPrimaria">
-        <div class="container">
-            <br /> <br />
-            <img src="images/perfil.jpg" class="foto-perfil" alt="Responsive image">
-            <h1 class="textoBranco jumbotron-heading">Marcio Kriiger</h1>
-            <p class="textoBranco lead">Desenvolvedor Web </br> Java • PHP • JavaScript • Bootstrap • jQuery • MySQL
-            </p>                
-                <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/marciokriiger" target="_blank"><i class="fab fa-fw fa-github"></i></a>                
-                <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/marciokriiger" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" href="mailto:marciovonkriiger@gmail.com" target="_blank"><i class="fas fa-envelope fa-lg"></i></a>                                    
-        </div>
-    </section>
-    <!-- Projects -->
-    <div class="album py-5 bg-light" id="projetos">
-        <div class="container">
-            <h2 class="jumbotron-heading text-center titulosAzuis">Projetos</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card border-secondary mb-3">
-                        <div class="card-header">
-                            <h4 class="my-0 font-weight-normal">JSF CRUD Movies</h4>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Marcio Kriiger portfolio">
+        <meta name="author" content="marciokriiger">
+        <title>Portfolio - Marcio Kriiger</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet">
+        <!-- Fonts CSS-->
+        <link rel="stylesheet" href="css/heading.css">
+        <link rel="stylesheet" href="css/body.css">
+    </head>
+    <body id="page-top">
+        <nav class="navbar navbar-expand-lg bg-secondary fixed-top" id="mainNav">
+            <div class="container"><a class="navbar-brand js-scroll-trigger" href="#page-top">PORTFOLIO MARCIO</a>
+                <button class="navbar-toggler navbar-toggler-right font-weight-bold bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <i class="fas fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#portfolio">PROJETOS</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#about">SOBRE</a>
+                        </li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="#contact">CONTATO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="avatar">
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading mb-0">MARCIO KRIIGER</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-circle"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="pre-wrap masthead-subheading font-weight-light mb-0">Desenvolvedor Web - Java - PHP</p>
+            </div>
+        </header>
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <div class="text-center">
+                    <h2 class="page-section-heading text-secondary mb-0 d-inline-block">PROJETOS</h2>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-circle"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Items-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal0">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="assets/img/portfolio/moviebase.PNG" alt="Moviebase"/>
                         </div>
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="/images/moviebase.PNG" data-holder-rendered="true"
-                            style="height: 225px; width: 100%;max-width: 100%; display: block;">
-                        <div class="card-body">
-                            <p class="card-text">Projeto web que permite operações de CRUD em uma lista de objetos.
-                            </p>
-                            <ul>
-                                <li>Java EE</li>
-                                <li>JSF</li>
-                                <li>MVC</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://youtu.be/Nf6mBpRo7KQ" target="_blank"
-                                        rel="noopener noreferrer"><button type="button"
-                                            class="btn btn-sm btn-outline-danger">Demo</button></a>
-                                    <a href="https://github.com/marciokriiger/jsf-crud-movie" target="_blank"
-                                        rel="noopener noreferrer"><button type="button"
-                                            class="btn btn-sm btn-outline-primary">Código</button></a>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="assets/img/portfolio/php_crud_databases.PNG" alt="PHP CRUD Datatables"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="assets/img/portfolio/dsdeliver.PNG" alt="DS Deliver"/>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div><img class="img-fluid" src="assets/img/portfolio/agendaEmerj.PNG" alt="Projetos EMERJ"/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Portfolio Modal-->
+        <div class="portfolio-modal modal fade" id="portfolioModal0" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal0Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Moviebase</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-circle"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/moviebase.PNG" alt="Moviebase"/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        Projeto web que permite operações de CRUD em uma lista de objetos. 
+                                        Tecnologias utilizadas: Java e JSF no padrão MVC.
+                                        </br>                                         
+                                        <a href="https://youtu.be/Nf6mBpRo7KQ" target="_blank"
+                                        >Ver demonstração.</a>
+                                        <a href="https://github.com/marciokriiger/jsf-crud-movie" target="_blank"
+                                        >Ver código.</a>
+                                    </p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Fechar</button>
                                 </div>
-                                <small class="text-muted">Web</small>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="card border-secondary mb-3">
-                        <div class="card-header">
-                            <h4 class="my-0 font-weight-normal">DS Deliver</h4>
-                        </div>
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="/images/dsdeliver.PNG" data-holder-rendered="true"
-                            style="height: 225px; width: 100%; display: block;">
-                        <div class="card-body">
-                            <p class="card-text">Projeto que simula uma aplicação de entregas de alimentos.
-                            </p>
-                            <ul>
-                                <li>Back end: Java, Spring Boot, JPA, Hibernate, Maven</li>
-                                <li>Front end: HTML, CSS, JS, TypeScript, ReactJS, React Native, Apex Charts, Expo
-                                </li>
-                                <li>Implantação em produção: Heroku, Netlify, Postgresql</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="https://youtu.be/QdW_gH4Rb4c" target="_blank"
-                                        rel="noopener noreferrer"><button type="button"
-                                            class="btn btn-sm btn-outline-danger">Demo</button></a>                                    
-                                    <a href="https://marcio-kriiger-sds2.netlify.app" target="_blank"
-                                        rel="noopener noreferrer"><button type="button"
-                                            class="btn btn-sm btn-outline-success">Produção</button></a>
-                                    <a href="https://github.com/marciokriiger/dsdeliver-sds2" target="_blank"
-                                        rel="noopener noreferrer"><button type="button"
-                                            class="btn btn-sm btn-outline-primary">Código</button></a>
-                                </div>
-                                <small class="text-muted">Web/Mobile</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card border-secondary mb-3">
-                        <div class="card-header">
-                            <h4 class="my-0 font-weight-normal">PHP CRUD Datatables</h4>
-                        </div>
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="/images/php_crud_databases.PNG" data-holder-rendered="true"
-                            style="height: 225px; width: 100%;max-width: 100%; display: block;">
-                        <div class="card-body">
-                            <p class="card-text">O projeto realiza operações de CRUD, validação de input e ordenação de tabela.
-                            </p>
-                            <ul>
-                                <li>Linguagens: PHP, Javascript</li>
-                                <li>Bibliotecas: Bootstrap, jQuery, Datatables</li>
-                                <li>Banco de dados: MySQL</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
+            </div>
+        </div>
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">PHP CRUD Datatables</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-circle"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/php_crud_databases.PNG" alt="PHP CRUD Datatables"/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">O projeto realiza operações de CRUD, validação de input e ordenação de tabela.
+                                        Tecnologias: Linguagens: PHP, Javascript. Bibliotecas: Bootstrap, jQuery, Datatables. Banco de dados: MySQL.
+                                    </br>
                                     <a href="https://youtu.be/joVFPVTA1K0" target="_blank"
-                                        rel="noopener noreferrer"><button type="button"
-                                            class="btn btn-sm btn-outline-danger">Demo</button></a>
+                                        >Ver demonstração.</a>
                                     <a href="https://github.com/marciokriiger/php_crud_datatables" target="_blank"
-                                        rel="noopener noreferrer"><button type="button"
-                                            class="btn btn-sm btn-outline-primary">Código</button></a>
+                                        >Ver código.</a>
+                                    </p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Fechar</button>
                                 </div>
-                                <small class="text-muted">Web</small>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="card border-secondary mb-3">
-                        <div class="card-header">
-                            <h4 class="my-0 font-weight-normal">Projetos EMERJ</h4>
-                        </div>
-                        <img class="card-img-top"
-                            data-src="holder.js/100px225?theme=thumb&amp;bg=55595c&amp;fg=eceeef&amp;text=Thumbnail"
-                            alt="Thumbnail [100%x225]" src="/images/agendaEmerj.PNG" data-holder-rendered="true"
-                            style="height: 225px; width: 100%;max-width: 100%; display: block;">
-                        <div class="card-body">
-                            <p class="card-text">Projetos em que tive participação no desenvolvimento durante minha experiência na EMERJ.
-                            </p>
-                            <ul>
-                                <li>Linguagens: PHP, Java, Javascript</li>
-                                <li>Bibliotecas: Bootstrap, jQuery, Datatables, Fullcallendar</li>
-                                <li>Banco de dados: MySQL</li>
-                            </ul>
-                            <div class="d-flex justify-content-between align-items-center">
-                                <div class="btn-group">
-                                    <a href="doc/Projetos EMERJ.pdf" target="_blank"
-                                        rel="noopener noreferrer"><button type="button"
-                                            class="btn btn-sm btn-outline-danger">PDF</button></a>                                   
-                                </div>
-                                <small class="text-muted">Web</small>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-    <section class="jumbotron text-center corPrimaria" id="sobre-mim">
-        <div class="container">
-            <h2 class="jumbotron-heading titulosBrancos">Sobre mim</h2>
-            <p class="lead paragrafoBrancos">
-                Estudante de graduação motivado pela resolução de problemas por meio da tecnologia. 
-                Profissional com 2 anos de vivência em desenvolvimento Web, atuando com criação e manutenção de sistemas 
-                com PHP, Java, MySQL, Javascript, Bootstrap e jQuery. Colaboração em resultados, como informatização de processos manuais e migração de sistema legado para Web.
-            </p>
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">DS Deliver</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-circle"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/dsdeliver.PNG" alt="DS Deliver"/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">                                        
+                                        Projeto que simula uma aplicação de entregas de alimentos, desenvolvido durante a Semana DevSuperior 2.0.
+                                        Back end: Java, Spring Boot, JPA, Hibernate, Maven. 
+                                        Front end: HTML, CSS, JS, TypeScript, ReactJS, React Native, Apex Charts, Expo. 
+                                        Implantação em produção: Heroku, Netlify, Postgresql.
+                                    </br>
+                                    <a href="https://youtu.be/QdW_gH4Rb4c" target="_blank"
+                                        >Ver demonstração.</a>                                    
+                                    <a href="https://marcio-kriiger-sds2.netlify.app" target="_blank"
+                                        >Ver em produção.</a>
+                                    <a href="https://github.com/marciokriiger/dsdeliver-sds2" target="_blank"
+                                        >Ver código.</a>
+                                    </p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
-
-    <section Id="contato" class="titulosAzuis">
-        <div class="titulosAzuis">
-            <div style="padding-bottom:40px;" class="container-fluid">
-                <h2 style="padding-top:40px;" class="text-center titulosAzuis">Contato</h2>
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-labelledby="#portfolioModal3Label" aria-hidden="true">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fas fa-times"></i></span></button>
+                    <div class="modal-body text-center">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary mb-0">Projetos EMERJ</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-circle"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image--><img class="img-fluid rounded mb-5" src="assets/img/portfolio/agendaEmerj.PNG" alt="Projetos EMERJ"/>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-5">
+                                        Projetos em que tive participação no desenvolvimento durante minha experiência na EMERJ. 
+                                        Linguagens: PHP, Java, Javascript. 
+                                        Bibliotecas: Bootstrap, jQuery, Datatables, Fullcallendar. 
+                                        Banco de dados: MySQL.
+                                    </br>
+                                    <a href="assets/projetosEMERJ.pdf" target="_blank"
+                                        >Ver documento.</a>
+                                    </p>
+                                    <button class="btn btn-primary" href="#" data-dismiss="modal"><i class="fas fa-times fa-fw"></i>Fechar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <div class="text-center">
+                    <h2 class="page-section-heading d-inline-block text-white">SOBRE</h2>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-circle"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-                        <i class="fas fa-phone fa-3x mb-3 text-muted"></i>
-                        <div>(21) 97655-2730</div>
+                    <div class="col-lg-4 ml-auto">
+                        <p class="pre-wrap lead">Sou um estudante de graduação motivado pela resolução de problemas por meio da tecnologia. Possuo 2 anos de vivência profissional em desenvolvimento Web, atuando com criação e manutenção de sistemas com PHP, Java, MySQL, Javascript, Bootstrap e jQuery.</p>
                     </div>
-                    <div class="col-lg-4 mr-auto text-center">
-                        <i class="fas fa-envelope fa-3x mb-3 text-muted"></i>
-                        <a class="d-block" href="mailto:marciovonkriiger@gmail.com" target="_blank">marciovonkriiger@gmail.com</a>
+                    <div class="col-lg-4 mr-auto">
+                        <p class="pre-wrap lead">Em minhas experiências profissionais e acadêmicas pude colaborar com resultados, como informatização de processos manuais e migração de sistema legado para Web. Interesses em desenvolvimento Web Full-Stack e Mobile.</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer class="text-center" style="background-color:#2c3e50;padding:0px; margin:0px">
-        <p style="margin:0px;padding-top:15px;padding-bottom:15px;color:white !important">Copyright © 2021 | Marcio
-            Kriiger
-        </p>
-    </footer>
-
-</body>
-
+        </section>
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <div class="text-center">
+                    <h2 class="page-section-heading text-secondary d-inline-block mb-0">CONTATO</h2>
+                </div>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-circle"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Section Content-->
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="icon-contact mb-3"><i class="fas fa-mobile-alt"></i></div>
+                            <div class="text-muted">Telefone</div>
+                            <div class="lead font-weight-bold">(21) 97655-2730</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="d-flex flex-column align-items-center">
+                            <div class="icon-contact mb-3"><i class="far fa-envelope"></i></div>
+                            <div class="text-muted">Email</div><a class="lead font-weight-bold" href="mailto:marciovonkriiger@gmail.com">marciovonkriiger@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h4 class="mb-4">ONDE ESTOU</h4>
+                        <p class="pre-wrap lead mb-0">Brasil, Rio de Janeiro, RJ</p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h4 class="mb-4">ONDE ME ENCONTRAR</h4>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/marciokriiger" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/marciokriiger" target="_blank"><i class="fab fa-fw fa-github"></i></a>
+                    </div>                    
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <section class="copyright py-4 text-center text-white">
+            <div class="container"><small class="pre-wrap">Copyright © Marcio Kriiger 2021 </small></div>
+        </section>
+        <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
+        <div class="scroll-to-top d-lg-none position-fixed"><a class="js-scroll-trigger d-block text-center text-white rounded" href="#page-top"><i class="fa fa-chevron-up"></i></a></div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Contact form JS-->
+        <script src="assets/mail/jqBootstrapValidation.js"></script>
+        <script src="assets/mail/contact_me.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
